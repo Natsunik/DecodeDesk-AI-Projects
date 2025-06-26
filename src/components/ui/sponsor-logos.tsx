@@ -1,4 +1,3 @@
-// src/components/SponsorLogos.tsx
 import React from 'react';
 
 interface SponsorLogosProps {
@@ -29,7 +28,7 @@ export function SponsorLogos({ className = '' }: SponsorLogosProps) {
 
   return (
     <div
-      className={`fixed bottom-4 right-4 z-40 bg-black/70 rounded-xl px-4 py-3 shadow-xl flex flex-col items-center space-y-2 ${className}`}
+      className={`fixed bottom-4 right-4 z-40 bg-black/80 rounded-xl px-4 py-3 shadow-xl flex flex-col items-center space-y-2 ${className}`}
       style={{ minWidth: '220px' }}
     >
       <div className="flex flex-wrap items-center justify-center gap-3 md:gap-4">
