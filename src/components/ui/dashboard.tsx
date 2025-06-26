@@ -176,25 +176,7 @@ export function Dashboard({ user, onLogout }: DashboardProps) {
             </Card>
           </div>
 
-          {/* Main Content */}
-          <div className="lg:col-span-3 w-full">
-            {activeTab === 'translate' && (
-              <div className="space-y-6">
-                <Card className="bg-gray-900/90 backdrop-blur-sm border-gray-600/50">
-                  <CardHeader>
-                    <h2 className="text-2xl font-bold text-white">Corporate Speak Translator</h2>
-                    <p className="text-white/90">Unlimited translations with your Pro account</p>
-                  </CardHeader>
-                </Card>
-                <TranslationForm onTranslationComplete={handleTranslationComplete} />
-                <TranslationForm 
-                  onTranslationComplete={handleTranslationComplete}
-                  onUpgrade={handleUpgrade}
-                  user={user}
-                  onQuotaExhausted={() => setShowQuotaModal(true)}
-                />
-              </div>
-            )}
+          
 
             {activeTab === 'analytics' && (
               <div className="space-y-6">
