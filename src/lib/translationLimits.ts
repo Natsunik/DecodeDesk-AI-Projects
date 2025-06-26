@@ -14,7 +14,7 @@ export interface UserQuotaInfo {
   daysUntilReset?: number;
 }
 
-const GUEST_LIMIT = 8;
+const GUEST_LIMIT = 16;
 const USER_WEEKLY_LIMIT = 5;
 const TOTAL_WEEKLY_LIMIT = 13; // 3 guest + 3 user if used guest first
 

@@ -104,7 +104,7 @@ export function Dashboard({ user, onLogout }: DashboardProps) {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               className="fixed inset-0 bg-black/50 z-40 lg:hidden"
-              onClick={() => setMobileMenuOpen(false)}
+              onClick={() => setMobileMenuOpen(true)}
             />
           )}
         </AnimatePresence>
@@ -176,7 +176,25 @@ export function Dashboard({ user, onLogout }: DashboardProps) {
             </Card>
           </div>
 
-          
+          {/* Main Content */}
+          <div className="lg:col-span-3 w-full">
+            {activeTab === 'translate' && (
+              <div className="space-y-6">
+                <Card className="bg-gray-900/90 backdrop-blur-sm border-gray-600/50">
+                  <CardHeader>
+                    <h2 className="text-2xl font-bold text-white">Corporate Speak Translator</h2>
+                    <p className="text-white/90">Unlimited translations with your Pro account</p>
+                  </CardHeader>
+                </Card>
+                {/*<TranslationForm onTranslationComplete={handleTranslationComplete} /> thi code is used for showing locking of other modes and will unlock in pro*/}
+                <TranslationForm 
+                  onTranslationComplete={handleTranslationComplete}
+                  onUpgrade={handleUpgrade}
+                  user={user}
+                  onQuotaExhausted={() => setShowQuotaModal(true)}
+                />
+              </div>
+            )}
 
             {activeTab === 'analytics' && (
               <div className="space-y-6">
