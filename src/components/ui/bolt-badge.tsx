@@ -6,7 +6,7 @@ interface BoltBadgeProps {
 
 export function BoltBadge({ className = '' }: BoltBadgeProps) {
   return (
-    <div className={`fixed top-18 right-4 z-50 ${className}`}>
+    <div className={`fixed top-16 right-4 z-50 ${className}`}>
       <a
         href="https://bolt.new/"
         target="_blank"
