@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader } from '../Card';
 import { Button } from '../Button';
-//import { BoltBadge } from './bolt-badge';
+import { BoltBadge } from './bolt-badge';
 import { Footer } from './footer';
 import { 
   Mail, 
