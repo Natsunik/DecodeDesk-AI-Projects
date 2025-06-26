@@ -1,6 +1,7 @@
 import React from 'react';
 import { SponsorLogos } from './sponsor-logos';
 
+
 interface FooterProps {
   onNavigate?: (page: 'contact' | 'pricing') => void;
 }
