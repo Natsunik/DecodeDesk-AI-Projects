@@ -1,4 +1,5 @@
 import React from 'react';
+import { SponsorLogos } from './sponsor-logos';
 
 interface FooterProps {
   onNavigate?: (page: 'contact' | 'pricing') => void;
@@ -59,8 +60,22 @@ export function Footer({ onNavigate }: FooterProps) {
           </div>
         </div>
         
-        <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p className="text-white/70">Made with ❤️ by DecodeDesk | <a href="#privacy" className="hover:text-white">Privacy Policy</a> | <a href="#contact" className="hover:text-white">Contact</a> | <a href="#twitter" className="hover:text-white">Twitter/X</a> | <a href="#github" className="hover:text-white">GitHub</a></p>
+        <div className="border-t border-gray-800 mt-8 pt-8">
+          {/* Sponsor Logos Section */}
+          <div className="mb-8">
+            <SponsorLogos />
+          </div>
+          
+          {/* Footer Links */}
+          <div className="text-center text-gray-400">
+            <p className="text-white/70">
+              Made with ❤️ by DecodeDesk | 
+              <a href="#privacy" className="hover:text-white ml-1">Privacy Policy</a> | 
+              <button onClick={() => onNavigate?.('contact')} className="hover:text-white ml-1">Contact</button> | 
+              <a href="#twitter" className="hover:text-white ml-1">Twitter/X</a> | 
+              <a href="#github" className="hover:text-white ml-1">GitHub</a>
+            </p>
+          </div>
         </div>
       </div>
     </footer>

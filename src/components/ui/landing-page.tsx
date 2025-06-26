@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { HeroSection } from './hero-section-dark';
+import { BoltBadge } from './bolt-badge';
 import { Features } from './features';
 import { Pricing } from './pricing';
 import { HowItWorks } from './how-it-works';
@@ -82,6 +83,9 @@ export function LandingPage({ onNavigate }: LandingPageProps) {
 
   return (
     <div className="min-h-screen">
+      {/* Bolt.new Badge - Fixed Position */}
+      <BoltBadge />
+      
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-sm border-b border-white/10">
         <div className="container mx-auto flex items-center justify-between px-4 py-4">

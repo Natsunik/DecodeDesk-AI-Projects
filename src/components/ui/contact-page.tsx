@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader } from '../Card';
 import { Button } from '../Button';
+import { BoltBadge } from './bolt-badge';
 import { Footer } from './footer';
 import { 
   Mail, 
@@ -133,6 +134,9 @@ export function ContactPage({ onBack }: ContactPageProps) {
 
   return (
     <div className="min-h-screen bg-black">
+      {/* Bolt.new Badge - Fixed Position */}
+      <BoltBadge />
+      
       {/* Background gradient */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_20%_80%_at_50%_-20%,rgba(120,119,198,0.15),rgba(255,255,255,0))]" />
       
