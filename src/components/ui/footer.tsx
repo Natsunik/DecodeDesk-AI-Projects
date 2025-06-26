@@ -76,7 +76,7 @@ export function Footer({ onNavigate }: FooterProps) {
         </div>
       </footer>
       {/* Sponsor logos are outside the footer and fixed to bottom right */}
-      
+      <!--<SponsorLogos /> -->
     </>
   );
 }
