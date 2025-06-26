@@ -1,3 +1,4 @@
+// src/components/SponsorLogos.tsx
 import React from 'react';
 
 interface SponsorLogosProps {
@@ -27,37 +28,35 @@ export function SponsorLogos({ className = '' }: SponsorLogosProps) {
   ];
 
   return (
-    <div className={`flex flex-col items-center space-y-4 ${className}`}>
-      <p className="text-white/70 text-sm font-medium">
-        Made with ❤️ for the Hackathon
-      </p>
-      
-      <div className="flex flex-wrap items-center justify-center gap-6 md:gap-8">
+    <div
+      className={`fixed bottom-4 right-4 z-40 bg-black/70 rounded-xl px-4 py-3 shadow-xl flex flex-col items-center space-y-2 ${className}`}
+      style={{ minWidth: '220px' }}
+    >
+      <div className="flex flex-wrap items-center justify-center gap-3 md:gap-4">
         {sponsors.map((sponsor) => (
           <a
             key={sponsor.name}
             href={sponsor.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="transition-transform hover:scale-105 active:scale-95 opacity-80 hover:opacity-100"
+            className="transition-transform hover:scale-105 active:scale-95 opacity-90 hover:opacity-100"
             aria-label={`Visit ${sponsor.name}`}
           >
             <img
               src={sponsor.logo}
               alt={sponsor.alt}
-              className="h-8 md:h-10 w-auto max-w-[120px] object-contain"
+              className="h-7 md:h-8 w-auto max-w-[90px] object-contain"
             />
           </a>
         ))}
       </div>
-      
-      <div className="flex items-center gap-2 text-xs text-white/60">
+      <div className="flex items-center gap-2 text-xs text-white/70">
         <span>Powered by</span>
         <a
           href="https://bolt.new/"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-white/80 transition-colors"
+          className="hover:text-white/90 transition-colors font-semibold"
         >
           Bolt.new
         </a>
