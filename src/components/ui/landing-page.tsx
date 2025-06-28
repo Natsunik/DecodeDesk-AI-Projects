@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { EnhancedLandingPage } from './enhanced-landing-page';
+import { ResponsiveLandingPage } from './responsive-landing-page';
 import { useReducedMotion } from '../../hooks/use-reduced-motion';
 
 interface LandingPageProps {
@@ -11,6 +11,6 @@ export function LandingPage({ onNavigate }: LandingPageProps) {
 
   // Use animated version unless user prefers reduced motion
   return (
-    <EnhancedLandingPage onNavigate={onNavigate} />
+    <ResponsiveLandingPage onNavigate={onNavigate} />
   );
 }

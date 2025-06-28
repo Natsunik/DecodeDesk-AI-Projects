@@ -130,6 +130,118 @@ html {
   border-radius: 4px;
 }
 
+/* Responsive typography */
+@media (max-width: 640px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1025px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+/* Touch-friendly interactive elements */
+@media (max-width: 1024px) {
+  button, 
+  a[role="button"], 
+  input[type="button"], 
+  input[type="submit"] {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Increase tap targets for mobile */
+  .mobile-tap-target {
+    padding: 0.75rem 1rem;
+  }
+}
+
+/* Responsive spacing utilities */
+.responsive-padding {
+  padding: 1rem;
+}
+
+@media (min-width: 640px) {
+  .responsive-padding {
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .responsive-padding {
+    padding: 2rem;
+  }
+}
+
+/* Container max-widths with responsive padding */
+.responsive-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .responsive-container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .responsive-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* Responsive text sizes */
+.responsive-text-sm {
+  font-size: 0.875rem;
+}
+
+@media (min-width: 640px) {
+  .responsive-text-sm {
+    font-size: 1rem;
+  }
+}
+
+.responsive-text-base {
+  font-size: 1rem;
+}
+
+@media (min-width: 640px) {
+  .responsive-text-base {
+    font-size: 1.125rem;
+  }
+}
+
+.responsive-text-lg {
+  font-size: 1.125rem;
+}
+
+@media (min-width: 640px) {
+  .responsive-text-lg {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .responsive-text-lg {
+    font-size: 1.5rem;
+  }
+}
+
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
