@@ -517,7 +517,7 @@ export function EnhancedDashboard({ user, onLogout }: EnhancedDashboardProps) {
                 </motion.div>
               )}
             </AnimatePresence>
-          </div>
+          </motion.div>
         </div>
       </div>
       
