@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { EnhancedDashboard } from './enhanced-dashboard';
+import { EnhancedDashboardAnimations } from './enhanced-dashboard-animations';
 
 interface DashboardProps {
   user: any;
@@ -7,5 +7,5 @@ interface DashboardProps {
 }
 
 export function Dashboard({ user, onLogout }: DashboardProps) {
-  return <EnhancedDashboard user={user} onLogout={onLogout} />;
+  return <EnhancedDashboardAnimations user={user} onLogout={onLogout} />;
 }
